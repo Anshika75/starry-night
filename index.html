@@ -1,0 +1,1265 @@
+<!-- Created by Ğŕâçìà§ -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+        <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    </head>
+    <body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Chela+One&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;    
+}
+main{
+    height:100vh;
+    width:100vw;
+    background-color:transparent;
+    position:relative;
+    top:0;
+    left:0;
+    overflow:hidden;
+    perspective: 600px; 
+}
+.starsc{
+    background: linear-gradient(to top, #283E51, #0A2342);
+    height:100%;
+    width:100%;
+    position:relative;
+    padding:5px;
+    perspective: 600px;
+    transform-style: preserve-3d;
+}
+
+
+.str{
+    height:10px;
+    width:10px;
+    position:absolute;
+    background-color:white;
+    border-radius:50%;
+    box-shadow:0 0 10px 4px #fff8;
+    background-color:#fff8;
+    animation:str 3s linear infinite;
+   /* animation-delay:5s;*/
+   transform: scale(0.1);
+   margin:10px;
+    
+}
+.str:before{
+    content: "";
+    position:absolute;
+    height:30px;
+    width:5px;
+    background-color:white;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    border-radius:50%;
+    background: linear-gradient(to right, #fff2, #fff, #fff2);
+}
+.str:after{
+    content: "";
+    position:absolute;
+    width:30px;
+    height:5px;
+    background-color:white;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    border-radius:50%;
+    background:linear-gradient(to top, #fff2, #fff, #fff2);
+}
+@keyframes str{ 
+    0%{ 
+        transform: scale(0.1) rotate(-200deg); 
+      } 
+    55%{
+         transform: scale(0.3) rotate(180deg); 
+     } 
+    100%{ 
+        transform: scale(0.1) rotate(-200deg); 
+        } 
+}
+
+
+.str1{
+    left:0%;
+}
+
+.str2{
+    top:0;
+    left:10%;
+}
+
+.str3{
+    left:20%;
+}
+
+.str4{
+    top:0;
+    left:30%;
+}
+.str5{
+    left:40%;
+}
+.str6{
+    top:0;
+    left:50%;
+}
+.str7{
+    left:60%;
+}
+.str8{
+    top:0;
+    left:70%;
+}
+.str9{
+    left:80%;
+}
+.str10{
+    top:0;
+    left:90%;
+}
+.str11{
+    top:5%;
+    left:5%;
+}
+.str12{
+    top:7%;
+    left:15%;
+}
+.str13{
+    top:5%;
+    left:25%;
+}
+.str14{
+    top:7%;
+    left:35%;
+}
+.str15{
+    top:5%;
+    left:45%;
+}
+.str16{
+    top:7%;
+    left:55%;
+}
+.str17{
+    top:5%;
+    left:65%;
+}
+.str18{
+    top:7%;
+    left:75%;
+}
+.str19{
+    top:5%;
+    left:85%;
+}
+.str20{
+    top:7%;
+    left:95%;
+}
+.str21{
+    top:10%;
+    left:0%;
+}
+
+.str22{
+    top:13%;
+    left:10%;
+}
+
+.str23{
+    top:10%;
+    left:20%;
+}
+
+.str24{
+    top:13%;
+    left:30%;
+}
+.str25{
+    top:10%;
+    left:40%;
+}
+.str26{
+    top:13%;
+    left:50%;
+}
+.str27{
+    top:10%;
+    left:60%;
+}
+.str28{
+    top:13%;
+    left:70%;
+}
+.str29{
+    top:10%;
+    left:80%;
+}
+.str30{
+    top:13%;
+    left:90%;
+}
+
+.str31{
+    top:15%;
+    left:5%;
+}
+.str32{
+    top:17%;
+    left:15%;
+}
+.str33{
+    top:15%;
+    left:25%;
+}
+.str34{
+    top:17%;
+    left:35%;
+}
+.str35{
+    top:15%;
+    left:45%;
+}
+.str36{
+    top:17%;
+    left:55%;
+}
+.str37{
+    top:15%;
+    left:65%;
+}
+.str38{
+    top:17%;
+    left:75%;
+}
+.str39{
+    top:15%;
+    left:85%;
+}
+.str40{
+    top:17%;
+    left:95%;
+}
+
+.str41{
+    top:20%;
+    left:0%;
+}
+
+.str42{
+    top:23%;
+    left:10%;
+}
+
+.str43{
+    top:20%;
+    left:20%;
+}
+
+.str44{
+    top:23%;
+    left:30%;
+}
+.str45{
+    top:20%;
+    left:40%;
+}
+.str46{
+    top:23%;
+    left:50%;
+}
+.str47{
+    top:20%;
+    left:60%;
+}
+.str48{
+    top:23%;
+    left:70%;
+}
+.str49{
+    top:20%;
+    left:80%;
+}
+.str50{
+    top:23%;
+    left:90%;
+}
+.str51{
+    top:25%;
+    left:5%;
+}
+.str52{
+    top:27%;
+    left:15%;
+}
+.str53{
+    top:25%;
+    left:25%;
+}
+.str54{
+    top:27%;
+    left:35%;
+}
+.str55{
+    top:25%;
+    left:45%;
+}
+.str56{
+    top:27%;
+    left:55%;
+}
+.str57{
+    top:25%;
+    left:65%;
+}
+.str58{
+    top:27%;
+    left:75%;
+}
+.str59{
+    top:25%;
+    left:85%;
+}
+.str60{
+    top:27%;
+    left:95%;
+}
+.str61{
+    top:30%;
+    left:0%;
+}
+
+.str62{
+    top:33%;
+    left:10%;
+}
+
+.str63{
+    top:30%;
+    left:20%;
+}
+
+.str64{
+    top:33%;
+    left:30%;
+}
+.str65{
+    top:30%;
+    left:40%;
+}
+.str66{
+    top:33%;
+    left:50%;
+}
+.str67{
+    top:30%;
+    left:60%;
+}
+.str68{
+    top:33%;
+    left:70%;
+}
+.str69{
+    top:30%;
+    left:80%;
+}
+.str70{
+    top:33%;
+    left:90%;
+}
+.str71{
+    top:35%;
+    left:5%;
+}
+.str72{
+    top:37%;
+    left:15%;
+}
+.str73{
+    top:35%;
+    left:25%;
+}
+.str74{
+    top:37%;
+    left:35%;
+}
+.str75{
+    top:35%;
+    left:45%;
+}
+.str76{
+    top:37%;
+    left:55%;
+}
+.str77{
+    top:35%;
+    left:65%;
+}
+.str78{
+    top:37%;
+    left:75%;
+}
+.str79{
+    top:35%;
+    left:85%;
+}
+.str80{
+    top:37%;
+    left:95%;
+}
+.str81{
+    top:40%;
+    left:0%;
+}
+
+.str82{
+    top:43%;
+    left:10%;
+}
+
+.str83{
+    top:40%;
+    left:20%;
+}
+
+.str84{
+    top:43%;
+    left:30%;
+}
+.str85{
+    top:40%;
+    left:40%;
+}
+.str86{
+    top:43%;
+    left:50%;
+}
+.str87{
+    top:40%;
+    left:60%;
+}
+.str88{
+    top:43%;
+    left:70%;
+}
+.str89{
+    top:40%;
+    left:80%;
+}
+.str90{
+    top:43%;
+    left:90%;
+}
+.str91{
+    top:45%;
+    left:5%;
+}
+.str92{
+    top:47%;
+    left:15%;
+}
+.str93{
+    top:45%;
+    left:25%;
+}
+.str94{
+    top:47%;
+    left:35%;
+}
+.str95{
+    top:45%;
+    left:45%;
+}
+.str96{
+    top:47%;
+    left:55%;
+}
+.str97{
+    top:45%;
+    left:65%;
+}
+.str98{
+    top:47%;
+    left:75%;
+}
+.str99{
+    top:45%;
+    left:85%;
+}
+.str100{
+    top:47%;
+    left:95%;
+}
+.str101{
+    top:50%;
+    left:0%;
+}
+
+.str102{
+    top:53%;
+    left:10%;
+}
+
+.str103{
+    top:50%;
+    left:20%;
+}
+
+.str104{
+    top:53%;
+    left:30%;
+}
+.str105{
+    top:50%;
+    left:40%;
+}
+.str106{
+    top:53%;
+    left:50%;
+}
+.str107{
+    top:50%;
+    left:60%;
+}
+.str108{
+    top:53%;
+    left:70%;
+}
+.str109{
+    top:50%;
+    left:80%;
+}
+.str110{
+    top:53%;
+    left:90%;
+}
+.str111{
+    top:55%;
+    left:5%;
+}
+.str112{
+    top:57%;
+    left:15%;
+}
+.str113{
+    top:55%;
+    left:25%;
+}
+.str114{
+    top:57%;
+    left:35%;
+}
+.str115{
+    top:55%;
+    left:45%;
+}
+.str116{
+    top:57%;
+    left:55%;
+}
+.str117{
+    top:55%;
+    left:65%;
+}
+.str118{
+    top:57%;
+    left:75%;
+}
+.str119{
+    top:55%;
+    left:85%;
+}
+.str120{
+    top:57%;
+    left:95%;
+}
+.str121{
+    top:60%;
+    left:0%;
+}
+
+.str122{
+    top:63%;
+    left:10%;
+}
+
+.str123{
+    top:60%;
+    left:20%;
+}
+
+.str124{
+    top:63%;
+    left:30%;
+}
+.str125{
+    top:60%;
+    left:40%;
+}
+.str126{
+    top:63%;
+    left:50%;
+}
+.str127{
+    top:60%;
+    left:60%;
+}
+.str128{
+    top:63%;
+    left:70%;
+}
+.str129{
+    top:60%;
+    left:80%;
+}
+.str130{
+    top:63%;
+    left:90%;
+}
+.str131{
+    top:65%;
+    left:5%;
+}
+.str132{
+    top:67%;
+    left:15%;
+}
+.str133{
+    top:65%;
+    left:25%;
+}
+.str134{
+    top:67%;
+    left:35%;
+}
+.str135{
+    top:65%;
+    left:45%;
+}
+.str136{
+    top:67%;
+    left:55%;
+}
+.str137{
+    top:65%;
+    left:65%;
+}
+.str138{
+    top:67%;
+    left:75%;
+}
+.str139{
+    top:65%;
+    left:85%;
+}
+.str140{
+    top:67%;
+    left:95%;
+}
+.str141{
+    top:70%;
+    left:0%;
+}
+
+.str142{
+    top:73%;
+    left:10%;
+}
+
+.str143{
+    top:70%;
+    left:20%;
+}
+
+.str144{
+    top:73%;
+    left:30%;
+}
+.str145{
+    top:70%;
+    left:40%;
+}
+.str146{
+    top:73%;
+    left:50%;
+}
+.str147{
+    top:70%;
+    left:60%;
+}
+.str148{
+    top:73%;
+    left:70%;
+}
+.str149{
+    top:70%;
+    left:80%;
+}
+.str150{
+    top:73%;
+    left:90%;
+}
+.moon{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    height:85vw;
+    width:85vw;
+    border-radius:50%;
+    background-color: #FAF9F6;
+    box-shadow: 0px 0px 0px 25px  rgba(255, 255, 255, 0.05), 0px 0px 0px 45px rgba(255, 255, 255, 0.02), 0px 0px 0px 65px  rgba(255, 255, 255, 0.01), inset -35px 0px 0px #EDEADE, inset -60px 0px 0px 20px #F9F6EE;
+}
+
+.moon:after {
+  content: "";
+  width: 60px;
+  height:60px;
+  border-radius: 50%;
+  background-color: #EDEADE;
+  position: absolute;
+  top: 40%;
+  left:7%;
+  /*box-shadow: 40px -20px 0px -10px #d8e8f7, 40px 10px 0px -15px #d8e8f7;*/
+  box-shadow:20px -50px 0px -15px #EDEADE,10px 50px 0px -20px #EDEADE;
+}
+
+.footer{
+    width:100%;
+    height:10vh;
+    background-color:transparent;
+    position:absolute;
+    bottom:0;
+    left:0px;
+    display:flex;
+    flex-direction:row;
+}
+
+.grass{
+    width: 0; 
+    height: 0; 
+    border-left:10px solid transparent; 
+    border-right:10px solid transparent; 
+    border-bottom:80px solid black;
+    margin-right:.2px;
+}
+
+.fb{
+    bottom:-20px;
+    left:-10px;
+}
+
+.g3, .g6, .g9, .g12, .g15, .g18, .g21{
+    transform:rotate(5deg);
+}
+
+.g1, .g4, .g7, .g10, .g13, .g16, .g19{
+    transform:rotate(-5deg);    
+}
+
+
+.swing{
+    position:absolute;
+    height:110%;
+    width:100%;
+    background-color:transparent;
+    top:-10%;
+    left:0;
+    animation:anims 3s linear alternate infinite;
+    z-index:10;
+}
+.base{
+    position:absolute;
+    top:65vh;
+    left:50%;
+    transform:translateX(-50%);
+    width:80vw;
+    height:2vh;
+    background-color:black;
+    border-radius:2rem;
+    box-shadow:0 0 1vmin 1vmin #fff2;
+}
+
+.st{
+    position:absolute;
+    top:0;
+    left:15vw;
+    height:69vh;
+    width:2vw;
+    background-color:black;
+    border-radius:0 0rem 2rem 2rem;
+    box-shadow:0 0 .5vmin .5vmin #fff2;
+}
+.st2{
+    position:absolute;
+    left:85vw;
+    
+}
+@keyframes anims {
+  0% {
+    transform: rotateZ(-5deg);
+    transform-origin: top;
+    
+  }
+  50%{
+      transform: rotateZ(0deg);
+    transform-origin: top;
+  }
+  100% {
+    transform: rotateZ(5deg);
+    transform-origin: top;
+    
+  }
+}
+
+.cbox{
+    position:absolute;
+    height:40%;
+    width:60%;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    z-index:1;
+}
+.body{
+    position:absolute;
+    top:65%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    height:60%;
+    width:50%;
+    border-radius:50%;
+    background-color:black;
+}
+.face{
+    position:absolute;
+    top:27%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    height:25%;
+    width:40%;
+    border-radius:50%;
+    background-color:black;
+}
+.ear{
+    position:absolute;
+    top:30px;
+    left:65px;
+    width: 0; 
+    height: 0; 
+    border-left:20px solid transparent; 
+    border-right:20px solid transparent; 
+    border-bottom:40px solid black;
+    transform:rotate(-40deg);
+}
+
+.earl{
+    top:30px;
+    left:145px;
+    transform:rotate(40deg);
+}
+.tail{
+    position: absolute; 
+    top:35%;
+    left:65px;
+    width:150px; 
+    height:150px; 
+    border-radius: 50%; 
+    transform: rotate(175deg); 
+    box-shadow: -15px -15px 0 0 #000;
+}
+.c1{
+    font-size:45px;
+    color:#111;
+    position:absolute;
+    top:20%;
+}
+.c2{
+    font-size:45px;
+    color:#111;
+    position:absolute;
+    top:10%;
+    left:30%;
+}
+.c3{
+    font-size:45px;
+    color:#111;
+    position:absolute;
+    top:5%;
+    left:65%;
+}
+.c4{
+    font-size:45px;
+    color:#111;
+    position:absolute;
+    top:20%;
+    left:90%;
+}
+.c5{
+    font-size:45px;
+    color:#111;
+    position:absolute;
+    top:2%;
+}
+.c6{
+    font-size:45px;
+    color:#111;
+    position:absolute;
+    top:50%;
+}
+.c7{
+    font-size:45px;
+    color:#111;
+    position:absolute;
+    top:40%;
+    left:40%;
+}
+.c8{
+    font-size:45px;
+    color:#111;
+    position:absolute;
+    top:40%;
+    left:80%;
+}
+.c9{
+    font-size:45px;
+    color:#111;
+    position:absolute;
+    top:70%;
+    left:35%;
+}
+.c10{
+    font-size:45px;
+    color:#111;
+    position:absolute;
+    top:60%;
+    left:60%;
+}
+.c11{
+    font-size:45px;
+    color:#111;
+    position:absolute;
+    top:80%;
+    left:83%;
+}
+.c12{
+    font-size:45px;
+    color:#111;
+    position:absolute;
+    top:82%;
+    left:6%;
+}
+.fa{
+    color:#191919;
+    opacity:0.98;
+    animation:an 3s linear alternate infinite;
+}
+
+@keyframes an{
+    0%{
+        transform:translateX(-90%);
+    }
+    100%{
+        transform:translateX(90%);
+    }
+}
+.a{
+    animation-delay:4s;
+}
+.b{
+    animation-delay:5s;
+}
+.c{
+    animation-delay:6s;
+}
+.d{
+    animation-delay:7s;
+}
+
+.load{
+    background-color:black;
+    position:absolute;
+    top:0;
+    left:0;
+    display:grid;
+    place-items:center;
+    font-family: "Chela One", sans-serif;
+    font-size:3rem;
+    letter-spacing:1rem;
+    color:white;
+    animation:ld 1s 7s linear both;
+}
+.load div{
+   text-shadow: 0 0 5px #fff, 0 0 15px #fff;
+   animation:load 1s linear alternate infinite;
+   /*border:2px solid white;*/
+   overflow:hidden;
+}
+
+@keyframes load{
+    0%{
+        width:100vw;
+    }
+    100%{
+        width:60vw;
+    }
+}
+@keyframes ld{
+    0%{
+        opacity:1;
+    }
+    100%{
+        opacity:0;
+    }
+}
+
+    </style>
+        <main>
+            <div class="starsc sc1">
+                
+                <div class="str a str1"></div> 
+                <div class="str b str2"></div>
+                <div class="str c str3"></div>
+                <div class="str d str4"></div>
+                <div class="str d str5"></div>
+                <div class="str c str6"></div>
+                <div class="str b str7"></div>
+                <div class="str a str8"></div>
+                <div class="str a str9"></div>
+                <div class="str b str10"></div>
+                <div class="str c str11"></div> 
+                <div class="str d str12"></div>
+                <div class="str c str13"></div>
+                <div class="str d str14"></div>
+                <div class="str b str15"></div>
+                <div class="str a str16"></div>
+                <div class="str a str17"></div>
+                <div class="str b str18"></div>
+                <div class="str c str19"></div>
+                <div class="str d str20"></div>
+                <div class="str b str21"></div> 
+                <div class="str a str22"></div>
+                <div class="str d str23"></div>
+                <div class="str c str24"></div>
+                <div class="str a str25"></div>
+                <div class="str b str26"></div>
+                <div class="str c str27"></div>
+                <div class="str d str28"></div>
+                <div class="str c str29"></div>
+                <div class="str d str30"></div>
+                <div class="str b str31"></div> 
+                <div class="str a str32"></div>
+                <div class="str b str33"></div>
+                <div class="str a str34"></div>
+                <div class="str c str35"></div>
+                <div class="str d str36"></div>
+                <div class="str a str37"></div>
+                <div class="str b str38"></div>
+                <div class="str c str39"></div>
+                <div class="str d str40"></div>
+                <div class="str a str41"></div> 
+                <div class="str c str42"></div>
+                <div class="str d str43"></div>
+                <div class="str b str44"></div>
+                <div class="str b str45"></div>
+                <div class="str c str46"></div>
+                <div class="str d str47"></div>
+                <div class="str a str48"></div>
+                <div class="str a str49"></div>
+                <div class="str b str50"></div>
+                <div class="str c str51"></div> 
+                <div class="str d str52"></div>
+                <div class="str d str53"></div>
+                <div class="str c str54"></div>
+                <div class="str b str55"></div>
+                <div class="str a str56"></div>
+                <div class="str a str57"></div>
+                <div class="str b str58"></div>
+                <div class="str c str59"></div>
+                <div class="str d str60"></div>
+                <div class="str b str61"></div> 
+                <div class="str c str62"></div>
+                <div class="str d str63"></div>
+                <div class="str a str64"></div>
+                <div class="str a str65"></div>
+                <div class="str c str66"></div>
+                <div class="str d str67"></div>
+                <div class="str b str68"></div>
+                <div class="str b str69"></div>
+                <div class="str c str70"></div>
+                <div class="str d str71"></div> 
+                <div class="str a str72"></div>
+                <div class="str d str73"></div>
+                <div class="str c str74"></div>
+                <div class="str b str75"></div>
+                <div class="str a str76"></div>
+                <div class="str a str77"></div>
+                <div class="str b str78"></div>
+                <div class="str c str79"></div>
+                <div class="str d str80"></div>
+                <div class="str d str81"></div> 
+                <div class="str b str82"></div>
+                <div class="str c str83"></div>
+                <div class="str a str84"></div>
+                <div class="str a str85"></div>
+                <div class="str b str86"></div>
+                <div class="str c str87"></div>
+                <div class="str d str88"></div>
+                <div class="str d str89"></div>
+                <div class="str b str90"></div>
+                <div class="str c str91"></div> 
+                <div class="str a str92"></div>
+                <div class="str a str93"></div>
+                <div class="str b str94"></div>
+                <div class="str c str95"></div>
+                <div class="str d str96"></div>
+                <div class="str d str97"></div>
+                <div class="str b str98"></div>
+                <div class="str a str99"></div>
+                <div class="str c str100"></div>
+                <div class="str a str101"></div> 
+                <div class="str b str102"></div>
+                <div class="str c str103"></div>
+                <div class="str d str104"></div>
+                <div class="str b str105"></div>
+                <div class="str c str106"></div>
+                <div class="str d str107"></div>
+                <div class="str a str108"></div>
+                <div class="str a str109"></div>
+                <div class="str b str110"></div>
+                <div class="str c str111"></div> 
+                <div class="str d str112"></div>
+                <div class="str a str113"></div>
+                <div class="str b str114"></div>
+                <div class="str c str115"></div>
+                <div class="str d str116"></div>
+                <div class="str d str117"></div>
+                <div class="str c str118"></div>
+                <div class="str b str119"></div>
+                <div class="str a str120"></div>
+                <div class="str d str121"></div> 
+                <div class="str c str122"></div>
+                <div class="str b str123"></div>
+                <div class="str a str124"></div>
+                <div class="str b str125"></div>
+                <div class="str a str126"></div>
+                <div class="str c str127"></div>
+                <div class="str d str128"></div>
+                <div class="str b str129"></div>
+                <div class="str a str130"></div>
+                <div class="str c str131"></div> 
+                <div class="str d str132"></div>
+                <div class="str c str133"></div>
+                <div class="str d str134"></div>
+                <div class="str b str135"></div>
+                <div class="str a str136"></div>
+                <div class="str c str137"></div>
+                <div class="str d str138"></div>
+                <div class="str b str139"></div>
+                <div class="str a str140"></div>
+                <div class="str b str141"></div> 
+                <div class="str a str142"></div>
+                <div class="str c str143"></div>
+                <div class="str d str144"></div>
+                <div class="str b str145"></div>
+                <div class="str a str146"></div>
+                <div class="str c str147"></div>
+                <div class="str d str148"></div>
+                <div class="str a str149"></div>
+                <div class="str d str150"></div>
+                <div class="moon"></div>
+                <div class="footer">
+                    <div class="grass g1"></div>
+                    <div class="grass g2"></div>
+                    <div class="grass g3"></div>
+                    <div class="grass g4"></div>
+                    <div class="grass g5"></div>
+                    <div class="grass g6"></div>
+                    <div class="grass g7"></div>
+                    <div class="grass g8"></div>
+                    <div class="grass g9"></div>
+                    <div class="grass g10"></div>
+                    <div class="grass g11"></div>
+                    <div class="grass g12"></div>
+                    <div class="grass g13"></div>
+                    <div class="grass g14"></div>
+                    <div class="grass g15"></div>
+                    <div class="grass g16"></div>
+                    <div class="grass g17"></div>
+                    <div class="grass g18"></div>
+                    <div class="grass g19"></div>
+                    <div class="grass g20"></div>
+                    <div class="grass g21"></div>
+                </div>
+                 <div class="footer fb">
+                    <div class="grass g1"></div>
+                    <div class="grass g2"></div>
+                    <div class="grass g3"></div>
+                    <div class="grass g4"></div>
+                    <div class="grass g5"></div>
+                    <div class="grass g6"></div>
+                    <div class="grass g7"></div>
+                    <div class="grass g8"></div>
+                    <div class="grass g9"></div>
+                    <div class="grass g10"></div>
+                    <div class="grass g11"></div>
+                    <div class="grass g12"></div>
+                    <div class="grass g13"></div>
+                    <div class="grass g14"></div>
+                    <div class="grass g15"></div>
+                    <div class="grass g16"></div>
+                    <div class="grass g17"></div>
+                    <div class="grass g18"></div>
+                    <div class="grass g19"></div>
+                    <div class="grass g20"></div>
+                    <div class="grass g21"></div>
+                </div>
+                <div class="swing">
+                    <div class="st st1"></div>
+                    <div class="st st2"></div>
+                    <div class="base"></div>
+                    <div class="cbox">
+                        <div class="body"></div>
+                        <div class="face"></div>
+                        <div class="ear earr"></div>
+                        <div class="ear earl"></div>
+                        <div class="tail"></div>
+                    </div>
+              
+                </div>
+                      <i class="fa fa-cloud c1 a"></i>
+                      <i class="fa fa-cloud c2 b"></i>
+                      <i class="fa fa-cloud c3 c"></i>
+                      <i class="fa fa-cloud c4 d"></i>
+                      <i class="fa fa-cloud c5 d"></i>
+                      <i class="fa fa-cloud c6 b"></i>
+                      <i class="fa fa-cloud c7 c"></i>
+                      <i class="fa fa-cloud c8 a"></i>
+                      <i class="fa fa-cloud c9 a"></i>
+                      <i class="fa fa-cloud c10 c"></i>
+                     <i class="fa fa-cloud c11 d"></i>
+                      <i class="fa fa-cloud c12 b"></i>
+                      
+                     
+            </div>
+        </main>
+        <main class="load">
+            <div>LOADING...</div>
+        </main>
+        <script>
+            Swal.fire('By the darkness stars are revealed, always remember you are a star in someones sky (:')
+        </script>
+    </body>
+</html>
